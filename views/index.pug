@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  head
+    title koa-react
+    link(rel="stylesheet" href="app.css" title="app-styles")
+    script(type="text/javascript").
+      window.initialData = #{initialData};
+
+  body
+    h1 koa-react
+    div(id="application-root")
+    script(src="app.js")
