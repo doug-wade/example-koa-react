@@ -53,7 +53,7 @@
     "react-dom": "^15.0.0",
     "react-redux": "^5.0.2",
     "redux": "^3.3.1",
-    "supertest": "^2.0.1",
+    "supertest": "^3.0.0",
     "uuid": "3.0.1"
   }
 }
