@@ -4,7 +4,9 @@
   "main": "build/app.js",
   "scripts": {
     "start": "gulp clean && gulp build && node build/app.js | bunyan -o short",
-    "test": "gulp build && ava test/*.js"
+    "test": "gulp build && ava test/*.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [
     "koa",
@@ -54,6 +56,8 @@
     "react-redux": "^5.0.2",
     "redux": "^3.3.1",
     "supertest": "^2.0.1",
-    "uuid": "3.0.1"
-  }
+    "uuid": "3.0.1",
+    "snyk": "^1.88.1"
+  },
+  "snyk": true
 }
