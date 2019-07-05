@@ -6,7 +6,8 @@
     "start": "gulp clean && gulp build && node build/app.js | bunyan -o short",
     "test": "gulp build && ava test/*.js",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
+    "prepare": "npm run snyk-protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "koa",
@@ -57,7 +58,7 @@
     "redux": "^3.3.1",
     "supertest": "^3.0.0",
     "uuid": "3.0.1",
-    "snyk": "^1.88.1"
+    "snyk": "^1.192.0"
   },
   "snyk": true
 }
